@@ -1,0 +1,37 @@
+| Short form | Full form                             | Meaning                                                            |
+| ---------- | ------------------------------------- | ------------------------------------------------------------------ |
+| **HTML**   | HyperText Markup Language             | Creates the structure of web pages                                 |
+| **CSS**    | Cascading Style Sheets                | Styles and designs web pages                                       |
+| **JS**     | JavaScript                            | Adds interaction and dynamic behavior                              |
+| **PHP**    | PHP: Hypertext Preprocessor           | Server-side programming language                                   |
+| **API**    | Application Programming Interface     | Allows applications to communicate                                 |
+| **REST**   | Representational State Transfer       | Architecture commonly used for web APIs                            |
+| **HTTP**   | HyperText Transfer Protocol           | Communication protocol for the web                                 |
+| **HTTPS**  | HyperText Transfer Protocol Secure    | Secure version of HTTP                                             |
+| **URL**    | Uniform Resource Locator              | Address of a web resource                                          |
+| **UI**     | User Interface                        | What the user sees and interacts with                              |
+| **UX**     | User Experience                       | Overall user experience with a product                             |
+| **SQL**    | Structured Query Language             | Used to work with databases                                        |
+| **CRUD**   | Create, Read, Update, Delete          | Basic database operations                                          |
+| **JSON**   | JavaScript Object Notation            | Data format commonly used with APIs                                |
+| **XML**    | Extensible Markup Language            | Markup/data format                                                 |
+| **DOM**    | Document Object Model                 | Represents a web page as objects                                   |
+| **OOP**    | Object-Oriented Programming           | Programming using classes and objects                              |
+| **MVC**    | Model-View-Controller                 | Software architectural pattern                                     |
+| **IDE**    | Integrated Development Environment    | Software for writing/developing code                               |
+| **DB**     | Database                              | Stores application data                                            |
+| **DBMS**   | Database Management System            | Software for managing databases                                    |
+| **RDBMS**  | Relational Database Management System | Database system based on tables/relations                          |
+| **MySQL**  | My Structured Query Language          | Relational database system                                         |
+| **JWT**    | JSON Web Token                        | Used for authentication/authorization                              |
+| **AJAX**   | Asynchronous JavaScript and XML       | Technique for updating data without reloading the page             |
+| **WWW**    | World Wide Web                        | System of web pages/resources                                      |
+| **DNS**    | Domain Name System                    | Converts domain names to IP addresses                              |
+| **IP**     | Internet Protocol                     | Identifies devices/networks                                        |
+| **TCP**    | Transmission Control Protocol         | Reliable network communication protocol                            |
+| **FTP**    | File Transfer Protocol                | Transfers files between systems                                    |
+| **SSH**    | Secure Shell                          | Secure remote server access                                        |
+| **Git**    | Global Information Tracker*           | Version-control system; this expansion is not an official standard |
+| **CLI**    | Command-Line Interface                | Interface operated through commands                                |
+| **NPM**    | Node Package Manager                  | Package manager for Node.js                                        |
+| **PHP**    | PHP: Hypertext Preprocessor           | PHP is a recursive acronym                                         |

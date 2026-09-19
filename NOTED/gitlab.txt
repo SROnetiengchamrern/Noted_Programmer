@@ -35,6 +35,11 @@ git push origin brand/chamrern
 
 git pull origin main
 
+git checkout -b feature/dashboard
+git add .
+git commit -m "Add dashboard"
+git push origin feature/dashboard
+
 
 get all file from main
 git branch
