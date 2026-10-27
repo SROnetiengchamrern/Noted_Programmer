@@ -1,0 +1,21 @@
+https://chamrern.infinityfreeapp.com/
+====================================================
+https://cv-lavarvel-vue-new.onrender.com/
+
+https://cv-lavarvel-vue-new.onrender.com/admin
+
+- Email: `admin@chamrern.cv`
+- Password: `password`
+
+Hostname
+dpg-dbe27nnb9u1s73bu80a0-a
+
+Password
+0pmItPcHWQIeKOMlkKRoExs7rpQUMhtX
+
+Internal Database URL
+postgresql://chamrern_cv_db_user:0pmItPcHWQIeKOMlkKRoExs7rpQUMhtX@dpg-dbe27nnb9u1s73bu80a0-a/chamrern_cv_db
+
+External Database URL
+postgresql://chamrern_cv_db_user:0pmItPcHWQIeKOMlkKRoExs7rpQUMhtX@dpg-dbe27nnb9u1s73bu80a0-a.oregon-postgres.render.com/chamrern_cv_db
+====================================================

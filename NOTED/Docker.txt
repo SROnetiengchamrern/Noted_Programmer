@@ -1,0 +1,144 @@
+1. Check Docker installation
+Command	Purpose
+docker --version	Show Docker version
+docker compose version	Show Docker Compose version
+docker info	Show Docker system information
+docker help	List Docker commands
+docker COMMAND --help	Show help for a specific command
+docker login	Log in to Docker Hub
+docker logout
+
+2. Images — download and manage
+Docker images are templates used to create containers.
+docker images
+docker image ls
+docker pull nginx
+docker pull ubuntu:24.04
+docker image inspect nginx
+docker image history nginx
+docker image rm nginx
+docker rmi nginx
+docker image prune
+docker image prune -a
+
+3. Containers — create, start, stop, and remove
+A container is a running or stopped instance of an image.
+docker ps
+docker ps -a
+docker container ls
+docker container ls -a
+
+docker run hello-world
+docker run -d --name my-nginx -p 8080:80 nginx
+docker start my-nginx
+docker stop my-nginx
+docker restart my-nginx
+docker pause my-nginx
+docker unpause my-nginx
+docker kill my-nginx
+docker rm my-nginx
+docker rm -f my-nginx
+
+4. View logs and enter a container
+docker logs my-nginx
+docker logs -f my-nginx
+docker logs --tail 100 my-nginx
+
+docker exec -it my-nginx sh
+docker exec -it my-nginx bash
+docker attach my-nginx
+
+docker inspect my-nginx
+docker stats
+docker top my-nginx
+docker port my-nginx
+docker diff my-nginx
+
+5. Build your own Docker image
+Use these commands when you have a Dockerfile in your project folder.
+docker build -t my-app .
+docker build -t my-app:v1 .
+docker build --no-cache -t my-app .
+docker image ls
+
+docker tag my-app:v1 username/my-app:v1
+docker push username/my-app:v1
+docker pull username/my-app:v1
+
+6. Volumes — store persistent data
+Volumes keep data separate from the container's lifecycle. They are especially important for databases.
+docker volume ls
+docker volume create hr-data
+docker volume inspect hr-data
+docker volume rm hr-data
+docker volume prune
+
+7. Networks — connect containers
+docker network ls
+docker network create hr-network
+docker network inspect hr-network
+docker network connect hr-network my-nginx
+docker network disconnect hr-network my-nginx
+docker network rm hr-network
+docker network prune
+
+8. Docker Compose — run a complete application
+Docker Compose is useful for running your frontend, backend, and database together.
+docker compose version
+docker compose config
+docker compose up
+docker compose up -d
+docker compose down
+docker compose down -v
+docker compose ps
+docker compose logs
+docker compose logs -f
+docker compose logs -f backend
+docker compose restart
+docker compose stop
+docker compose start
+docker compose pull
+docker compose build
+docker compose build --no-cache
+docker compose exec backend sh
+docker compose run --rm backend dotnet --info
+
+
+9. Docker system — monitor and clean up
+docker system df
+docker system events
+docker system info
+docker system prune
+docker system prune -a
+docker system prune --volumes
+
+10. Copy files and inspect containers
+docker cp my-nginx:/etc/nginx/nginx.conf .
+docker cp ./index.html my-nginx:/usr/share/nginx/html/index.html
+
+docker inspect my-nginx
+docker inspect --format='{{.State.Status}}' my-nginx
+docker inspect --format='{{.NetworkSettings.IPAddress}}' my-nginx
+
+docker wait my-nginx
+docker rename my-nginx nginx-server
+docker update --restart unless-stopped nginx-server
+
+
+11. Dockerfile instructions
+These are instructions written inside a Dockerfile, not terminal commands.
+Instruction	Purpose
+FROM	Choose a base image
+WORKDIR	Set the working directory
+COPY	Copy files into the image
+ADD	Copy files or handle supported archives/URLs
+RUN	Execute commands during image building
+ENV	Set environment variables
+ARG	Define build-time variables
+EXPOSE	Document a container port
+USER	Set the user for subsequent instructions
+CMD	Set the default command
+ENTRYPOINT	Configure the executable
+VOLUME	Declare a mount point
+HEALTHCHECK	Define a container health check
+LABEL	Add image metadata
